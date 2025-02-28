@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twój Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #4A67F7;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(to right, #4A67F7, #6482FF);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: #4A67F7;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .features {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature-card {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #4A67F7;
+        }
+        
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+        }
+        
+        .cta {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(to right, #4A67F7, #6482FF);
+            color: white;
+        }
+        
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">TwojaMarka</div>
+                <div class="nav-links">
+                    <a href="#features">Funkcje</a>
+                    <a href="#testimonials">Opinie</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Twój Idealny Produkt</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ultricies elit at varius. Proin vel magna eget enim.</p>
+            <a href="#" class="btn">Rozpocznij teraz</a>
+        </div>
+    </section>
+
+    <!-- Sekcja Funkcji -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Nasze Funkcje</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">★</div>
+                    <h3>Prosta Obsługa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ultricies elit at varius.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Szybkie Działanie</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ultricies elit at varius.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Bezpieczeństwo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ultricies elit at varius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Co mówią nasi klienci</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"To najlepszy produkt, z jakiego korzystałem. Zdecydowanie polecam każdemu!"</p>
+                    <p class="testimonial-author">Jan Kowalski</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Prosty w obsłudze i niezwykle skuteczny. Zaoszczędził mi wiele czasu."</p>
+                    <p class="testimonial-author">Anna Nowak</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Świetne wsparcie klienta i bardzo intuicyjny interfejs. Jestem bardzo zadowolony."</p>
+                    <p class="testimonial-author">Piotr Wiśniewski</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja CTA -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Gotowy, by zacząć?</h2>
+            <p>Dołącz do tysięcy zadowolonych klientów już dziś!</p>
+            <a href="#" class="btn">Zarejestruj się za darmo</a>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">O nas</a>
+                <a href="#">Polityka prywatności</a>
+                <a href="#">Warunki korzystania</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <p>&copy; 2025 TwojaMarka. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
+</html>
